@@ -30,6 +30,10 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+            <Button
+                Text="Poo Poo"
+                SemanticProperties.Hint="I want poo poo"
+                HorizontalOptions="Fill"/>
         </VerticalStackLayout>
     </ScrollView>
 
