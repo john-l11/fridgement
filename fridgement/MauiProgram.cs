@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using fridgement.Interface;
 
 namespace fridgement
 {
@@ -18,6 +19,7 @@ namespace fridgement
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
+            builder.Services.AddSingleton<IHttpsApiService, HttpsApiService>();
 
             return builder.Build();
         }
